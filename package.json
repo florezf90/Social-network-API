@@ -1,0 +1,29 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "florezf90 NoSQL-social-Network database ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "seed": "node utils/seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florezf90/Social-network-API.git"
+  },
+  "keywords": [
+    "florezf90"
+  ],
+  "author": "florezf90",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/florezf90/Social-network-API/issues"
+  },
+  "homepage": "https://github.com/florezf90/Social-network-API#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "luxon": "^3.4.4",
+    "mongoose": "^8.0.3"
+  }
+}
