@@ -88,14 +88,22 @@ module.exports = {
           .json({ message: "No thought found with that ID buddy" });
       }
 
-      const user = await User.findOneAndUpdate(
-        { _id: thought.userId },
+      const userUpdate = await User.updateMany(
+        { thoughts: req.params.thoughtId },
         { $pull: { thoughts: req.params.thoughtId } },
         { runValidators: true, new: true }
       );
 
-      res.status(200).json({ thought, user });
+      const [updatedResult] = await Promise.all([ userUpdate ]);
+
+      if (updatedResult.nModified < 1 ) {
+        return res.status(404).json({ message: "No user found with that ID buddy" });
+      }
+
+      res.status(200).json({ thought,  message: 'thought deleted'});
     } catch (err) {
+          console.error(err);
+
       res.status(500).json(err);
     }
   },
@@ -116,6 +124,7 @@ module.exports = {
 
       res.status(200).json(reaction);
     } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -138,6 +147,7 @@ module.exports = {
 
       res.status(200).json(reaction);
     } catch (err) {
+      console.log(err);
       res.status(500).json(err);
     }
   },
