@@ -7,7 +7,7 @@
 
 
 [![license](https://img.shields.io/badge/license-MIT-white?labelColor=green&style=for-the-badge&logo=license&logoColor=white&logoWidth=20&link=https://github.com/florezf90/PRO-README-generator/blob/main/LICENSE)](https://github.com/florezf90/PRO-README-generator/blob/main/LICENSE) 
-[![Demo](https://img.shields.io/badge/Demo-Live%20deployment-blue?style=for-the-badge&logo=link&logoColor=blue)](https://drive.google.com/file/d/1aOtBo3COPQ67R3YA74y7g4NY6yyrtr4i/view)
+[![Demo](https://img.shields.io/badge/Demo-Live%20deployment-blue?style=for-the-badge&logo=link&logoColor=blue)](https://www.youtube.com/watch?v=OdivWHBff-E)
 
 
 </div>
@@ -68,7 +68,7 @@ In order to practice the new skilled acquired in the bootcamp weekly class, in t
 </div>
 
 
-💿 live demo link:  https://drive.google.com/file/d/1aOtBo3COPQ67R3YA74y7g4NY6yyrtr4i/view/ 
+💿 live demo link:  https://www.youtube.com/watch?v=OdivWHBff-E/ 
 
 To use this app in a local envirioment, please follow these steps:
 
@@ -126,7 +126,7 @@ If you have any questions, reach to:
 
  ✉️ mail: florezf90@gmail.com 
  
- 💿 Demo:  https://drive.google.com/file/d/1aOtBo3COPQ67R3YA74y7g4NY6yyrtr4i/view
+ 💿 Demo:  https://www.youtube.com/watch?v=OdivWHBff-E
 
 ----------------
 
