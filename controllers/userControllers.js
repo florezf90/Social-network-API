@@ -14,7 +14,7 @@ module.exports = {
     try {
       const user = await User.findOne({ _id: req.params.userId })
         .select("-__v")
-        .populate("thoughts")
+        .populate({path: 'thoughts'})
         .populate("friends");
 
       if (!user) {
@@ -37,6 +37,7 @@ module.exports = {
       });
       res.status(200).json(user);
     } catch (err) {
+      console.log(err),
       res.status(500).json(err);
     }
   },
@@ -92,7 +93,9 @@ module.exports = {
           .status(404)
           .json({ message: "No user found with that ID buddy" });
       }
-      return res.status(200).json(user);
+      return res
+        .status(200)
+        .json({ user, message: "friend added successfully" });
     } catch (err) {
       res.status(500).json(err);
     }
@@ -112,7 +115,7 @@ module.exports = {
           .json({ message: "No user found with that ID buddy" });
       }
 
-      return res.status(200).json(user);
+      return res.status(200).json({user, message: "friend deleted successfully"});
     } catch (err) {
       res.status(500).json(err);
     }
